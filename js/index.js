@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM\n Is\n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street\n Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -50,9 +50,24 @@ navLinks[3].innerText = siteContent['nav']['nav-item-4'];
 navLinks[4].innerText = siteContent['nav']['nav-item-5'];
 navLinks[5].innerText = siteContent['nav']['nav-item-6'];
 
-// navLinks.forEach(function(currentValue) {
-//   currentValue.style.color = 'green';
-// });
+const nav = document.querySelector('nav');
+
+let appendLink = document.createElement("a");
+appendLink.href = "#";
+appendLink.textContent = "Blog";
+nav.appendChild(appendLink);
+
+let prependLink = document.createElement("a");
+prependLink.href = "#";
+prependLink.textContent = "Store";
+nav.prepend(prependLink);
+
+const allNavLinks = document.querySelectorAll('nav a');
+
+allNavLinks.forEach(function(value) {
+  value.style.color = 'green';
+});
+
 
 
 // CTA CONTENT
