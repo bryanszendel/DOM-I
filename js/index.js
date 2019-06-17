@@ -97,3 +97,6 @@ contactContent[0].innerText = siteContent['contact']['address'];
 contactContent[1].innerText = siteContent['contact']['phone'];
 contactContent[2].innerText = siteContent['contact']['email'];
 
+// FOOTER
+let footer = document.querySelector('footer p')
+footer.innerText = siteContent['footer']['copyright'];
