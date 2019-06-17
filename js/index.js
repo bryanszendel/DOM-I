@@ -88,3 +88,12 @@ bottomContent[0].innerText = siteContent['main-content']['services-content'];
 bottomContent[1].innerText = siteContent['main-content']['product-content'];
 bottomContent[2].innerText = siteContent['main-content']['vision-content'];
 
+// CONTACT
+let contactH4 = document.querySelector('.contact h4')
+contactH4.innerText = siteContent['contact']['contact-h4'];
+
+let contactContent = document.querySelectorAll('.contact p')
+contactContent[0].innerText = siteContent['contact']['address'];
+contactContent[1].innerText = siteContent['contact']['phone'];
+contactContent[2].innerText = siteContent['contact']['email'];
+
