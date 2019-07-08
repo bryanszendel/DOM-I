@@ -125,3 +125,24 @@ contactContent[2].innerText = siteContent['contact']['email'];
 // FOOTER
 let footer = document.querySelector('footer p')
 footer.innerText = siteContent['footer']['copyright'];
+
+// BUTTON
+
+  let newButton = document.createElement('button');
+  newButton.textContent = 'Change Color';
+  console.log('newButton', newButton)
+
+  const body = document.querySelector('body');
+
+  const placeholder = document.querySelector('.cta-text');
+  body.insertBefore(newButton, body.childNodes[1]);
+
+  newButton.style.padding = '8px';
+  newButton.style.margin = '5px';
+  newButton.style.borderRadius = '3px';
+  newButton.style.fontSize = '25px';
+  
+  newButton.addEventListener('click', () => {
+    body.style.backgroundColor = '#' + parseInt(Math.random() * 0xffffff).toString(16);
+    newButton.style.backgroundColor = '#' + parseInt(Math.random() * 0xffffff).toString(16);
+  })
