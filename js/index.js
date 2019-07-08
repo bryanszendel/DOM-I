@@ -65,7 +65,7 @@ nav.prepend(prependLink);
 const allNavLinks = document.querySelectorAll('nav a');
 
 allNavLinks.forEach(function(value) {
-  value.style.color = 'green';
+  value.style.color = 'gray';
 });
 
 
@@ -85,6 +85,11 @@ ctaBtn.innerText = siteContent['cta']['button'];
 let mainH4 = document.querySelectorAll(".main-content .top-content .text-content h4");
 mainH4[0].innerText = siteContent['main-content']['features-h4'];
 mainH4[1].innerText = siteContent['main-content']['about-h4'];
+mainH4.forEach((value) => {
+  value.style.color = 'gray';
+  value.style.fontSize = '30px'
+  value.style.webkitTextStroke = '1px black';
+})
 
 let topContent = document.querySelectorAll(".main-content .top-content .text-content p");
 topContent[0].innerText = siteContent['main-content']['features-content'];
@@ -97,6 +102,11 @@ let bottomH4 = document.querySelectorAll('.main-content .bottom-content .text-co
 bottomH4[0].innerText = siteContent['main-content']['services-h4'];
 bottomH4[1].innerText = siteContent['main-content']['product-h4'];
 bottomH4[2].innerText = siteContent['main-content']['vision-h4'];
+bottomH4.forEach((value) => {
+  value.style.color = 'gray';
+  value.style.fontSize = '30px'
+  value.style.webkitTextStroke = '1px black';
+})
 
 let bottomContent = document.querySelectorAll('.main-content .bottom-content .text-content p');
 bottomContent[0].innerText = siteContent['main-content']['services-content'];
