@@ -6,9 +6,14 @@ body {
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 100px;
+  width: 180px;
 }
 
 .redDigit {
   color: red;
+}
+
+.digits {
+  width: 1000px;
 }
