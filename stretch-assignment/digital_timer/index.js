@@ -43,4 +43,5 @@ resetButton.addEventListener('click', () => {
     s.textContent = '-';
     msTens.textContent = '-';
     msHundreds.textContent = '-';
+    digitDiv.forEach((item) => item.classList.remove('redDigit'))
 })
