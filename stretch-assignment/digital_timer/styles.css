@@ -2,13 +2,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .digit {
-  display: inline-block;
-  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  width: 100%;
+  /* margin-top: 100px; */
 }
 
 .redDigit {
   color: red;
+}
+
+.digits {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 45px;
+  margin: 20px;
 }
